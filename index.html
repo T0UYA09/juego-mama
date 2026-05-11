@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahjong Pokémon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="ui-header">
+        <div class="stat">Puntuación: <span id="score">0</span></div>
+        <div class="stat">Pares Restantes: <span id="pairs-left">0</span></div>
+        <button id="music-btn">🎵 Música: Off</button>
+        <button id="restart-btn">Reiniciar</button>
+    </header>
+
+    <main class="game-container">
+        <div id="board" class="board"></div>
+    </main>
+
+    <div id="toast" class="toast hidden"></div>
+
+    <div id="victory-modal" class="modal hidden">
+        <div class="modal-content">
+            <h2>¡Victoria!</h2>
+            <p>Has emparejado todos los Pokémon.</p>
+            <button id="modal-restart-btn">Jugar de Nuevo</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
